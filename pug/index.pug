@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="css/style.css")
+    title Отправка формы
+body
+    .container.container_center
+        form.form(action="https://digital-spectr.com/ac/academy.php", method="POST")
+            .form__title Задать вопрос
+            .form__fields
+                .form__item
+                    input.form__input.js_input(type="text" name="name" placeholder="Фамилия Имя Отчество *" required)
+                    .form__message.js_message
+                .form__item
+                    input.form__input.js_input(type="tel" name="phone" placeholder="Телефон *" required)  
+                    .form__message.js_message
+                .form__item
+                    input.form__input.js_input(type="text" name="email" placeholder="Email")  
+                    .form__message.js_message
+                .form__warning.js_warning
+            .form__btn
+                button.btn.js_submit(type="submit") ОТПРАВИТЬ ЗАПРОС
+
+    script(src="js/jquery.js")
+    script(src="js/function.js")

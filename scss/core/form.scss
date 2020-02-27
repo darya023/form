@@ -1,0 +1,119 @@
+.form {
+    background: #F7F5F9;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding: 40px;
+
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 20px;
+        color: #3B3D43;
+    }
+
+    &__item {
+        position: relative;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    &__input {
+        background-color: #fff;
+        box-shadow: 0 7px 64px rgba(0, 0, 0, 0.07);
+        border-radius: 6px;
+        border: 1px solid #fff;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #000000;
+        padding: 13px 35.13px 13px 14px;
+        width: 100%;
+
+        &:hover {
+            border: 1px solid #854FC8;
+        }
+
+        &:focus {
+            border: 1px solid #854FC8;
+        }
+
+        &::placeholder {
+            color: #D0C9D6;
+        }
+
+        &.invalid {
+            border: 1px solid red;
+
+            &:hover {
+                border: 1px solid #854FC8;
+            }
+
+            &:focus {
+                border: 1px solid red;
+            }
+        }
+
+        &.valid {
+            border: 1px solid #ffffff;
+
+            &:hover {
+                border: 1px solid #854FC8;
+            }
+
+            &:focus {
+                border: 1px solid #854FC8;
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 25px;
+    }
+
+    &__message {
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: red;
+    }
+
+    &__fields {
+        position: relative;
+    }
+
+    &__warning {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #000000;
+    }
+}
+
+.btn {
+    background: #6979F8;
+    border-radius: 6px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 13px;
+    width: 100%;
+    cursor: pointer;
+}

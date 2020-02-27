@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>Отправка формы</title>
+</head>
+<body>
+  <div class="container container_center">
+    <form class="form" action="https://digital-spectr.com/ac/academy.php" method="POST">
+      <div class="form__title">Задать вопрос</div>
+      <div class="form__fields">
+        <div class="form__item">
+          <input class="form__input js_input" type="text" name="name" placeholder="Фамилия Имя Отчество *" required="required"/>
+          <div class="form__message js_message"></div>
+        </div>
+        <div class="form__item">
+          <input class="form__input js_input" type="tel" name="phone" placeholder="Телефон *" required="required"/>
+          <div class="form__message js_message"></div>
+        </div>
+        <div class="form__item">
+          <input class="form__input js_input" type="text" name="email" placeholder="Email"/>
+          <div class="form__message js_message"></div>
+        </div>
+        <div class="form__warning js_warning"></div>
+      </div>
+      <div class="form__btn">
+        <button class="btn js_submit" type="submit">ОТПРАВИТЬ ЗАПРОС</button>
+      </div>
+    </form>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/function.js"></script>
+</body>
